@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>WebSocket Test</title>
 </head>
 
@@ -11,24 +12,7 @@
     <button onclick="sendMessage()">Send</button>
     <div id="log"></div>
 
-    <script>
-        const socket = new WebSocket('ws://localhost:8080');
-
-        socket.onopen = () => {
-            console.log('Connected to WebSocket server');
-        };
-
-        socket.onmessage = (event) => {
-            const log = document.getElementById('log');
-            log.innerHTML += `<p>${event.data}</p>`;
-        };
-
-        function sendMessage() {
-            const input = document.getElementById('msgInput');
-            socket.send(input.value);
-            input.value = '';
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>

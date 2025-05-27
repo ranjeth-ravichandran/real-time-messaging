@@ -1,6 +1,13 @@
 # Real-Time Messaging
 Creating a website to understand networking with web sockets and to create a chat application to message users in real-time.
 
+| TODO                    |     |
+| ----------------------- | --- |
+| Redesign UI             | ⬜️   |
+| Implement into Vercel   | ⬜️   |
+| Adding database MongoDB | ⬜️   |
+| Adding backend server   | ⬜️   |
+
 ## What are Websockets?
 WebSockets provide a full-duplex communication channel over a single connection between the client and the server. 
 
@@ -30,6 +37,10 @@ A websocket requires a server and a client which talk over a persistent connecti
 - Node.js (ws -> a lightweight WebSocket server in Node.js)
 - WebSocket API (Built-in browser client API)
 
+# Issues or Problems 
+- When sending data over a socket the header/data is sent as binary and therefore interpreted as an Object Blob within browsers, to fix this the data needs to be checked whether it is a Blob datatype or converted in the server as text.
+- Use charset="UTF-8" as not all browsers will use the correct character set (Microsoft Edge).
 
 # Sources
-[Real-Time Communication with WebSockets: A Complete Guide](https://dev.to/dipakahirav/real-time-communication-with-websockets-a-complete-guide-32g4#:~:text=WebSockets%20provide%20a%20full-duplex%20communication%20channel%20over%20a,as%20chat%20applications,%20live%20notifications,%20and%20online%20gaming.)
+- [Real-Time Communication with WebSockets: A Complete Guide](https://dev.to/dipakahirav/real-time-communication-with-websockets-a-complete-guide-32g4#:~:text=WebSockets%20provide%20a%20full-duplex%20communication%20channel%20over%20a,as%20chat%20applications,%20live%20notifications,%20and%20online%20gaming.)
+- [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
