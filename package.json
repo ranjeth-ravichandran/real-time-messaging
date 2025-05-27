@@ -1,0 +1,15 @@
+{
+  "name": "real-time-messaging",
+  "version": "1.0.0",
+  "description": "Creating a website to understand networking with web sockets and to create a chat application to message users in real-time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.18.2"
+  }
+}
