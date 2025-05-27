@@ -30,9 +30,9 @@ function sendMessage() {
         message: input.value
     };
 
-    const colorDot = `<span style="color:${msgData.color}; font-weight:bold;">●</span>`;
+    /* const colorDot = `<span style="color:${msgData.color}; font-weight:bold;">●</span>`; */
 
-    log.innerHTML += `<p>${colorDot} <strong>${msgData.username}:</strong> ${msgData.message}</p>`;
+    /* log.innerHTML += `<p>${colorDot} <strong>${msgData.username}:</strong> ${msgData.message}</p>`; */
 
     socket.send(JSON.stringify(msgData));
     input.value = '';
