@@ -3,10 +3,10 @@ Creating a website to understand networking with web sockets and to create a cha
 
 | TODO                    |     |
 | ----------------------- | --- |
-| Redesign UI             | ⬜️   |
-| Implement into Vercel   | ⬜️   |
+| Redesign UI             | ✅   |
+| Implement into Vercel   | ✅   |
 | Adding database MongoDB | ⬜️   |
-| Adding backend server   | ⬜️   |
+| Adding backend server   | ✅   |
 
 ## What are Websockets?
 WebSockets provide a full-duplex communication channel over a single connection between the client and the server. 
@@ -48,6 +48,8 @@ A database stores information in a organized way, so data can be saved, retrieve
 - Node.js (ws -> a lightweight WebSocket server in Node.js)
 - WebSocket API (Built-in browser client API)
 - MongoDB with mongoose (Database to store messages and load to clients)
+- Vercel for frontend (Allows for deployments for static and dynamic websites)
+- Render for backend server (Node.js code is run through free tier on Render, this URL is used within the code)
 
 # Denial of Service
 A malicious user can spam the server with messages or open thousands of connections.
@@ -67,3 +69,5 @@ This consumes memory and CPU, potentially crashing the server.
 # Sources
 - [Real-Time Communication with WebSockets: A Complete Guide](https://dev.to/dipakahirav/real-time-communication-with-websockets-a-complete-guide-32g4#:~:text=WebSockets%20provide%20a%20full-duplex%20communication%20channel%20over%20a,as%20chat%20applications,%20live%20notifications,%20and%20online%20gaming.)
 - [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+- [Render: Web Services](https://render.com/)
+- [Vercel](https://vercel.com/)
