@@ -26,6 +26,8 @@ server.on('connection', socket => {
             message: `${username} has joined the chat.`,
         });
 
+        broadcastUserList();
+
         // On each message
         socket.on('message', rawMessage => {
             resetRateLimit();
@@ -63,6 +65,7 @@ server.on('connection', socket => {
                     message: `${user.username} has left the chat.`,
                 });
                 clients.delete(socket);
+                broadcastUserList();
             }
         });
 
@@ -82,6 +85,24 @@ function broadcast(data) {
     server.clients.forEach(client => {
         if (client.readyState === WebSocket.OPEN) {
             client.send(msg);
+        }
+    });
+}
+
+function broadcastUserList() {
+    const users = Array.from(clients.values()).map(user => ({
+        username: user.username,
+        color: user.color
+    }));
+
+    const message = JSON.stringify({
+        type: 'userList',
+        users
+    });
+
+    server.clients.forEach(client => {
+        if (client.readyState === WebSocket.OPEN) {
+            client.send(message);
         }
     });
 }

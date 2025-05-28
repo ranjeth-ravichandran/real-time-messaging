@@ -3,6 +3,7 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -57,4 +58,30 @@ body {
 
 #input-container button:hover {
     filter: brightness(0.5);
+}
+
+#users-container {
+    max-height: 120px;
+    overflow-y: auto;
+    margin-top: 10px;
+    background-color: rgba(16, 166, 177, 0.253);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#users-container p {
+    margin-bottom: 5px;
+}
+
+#userSelect {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#userSelect li {
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: 500;
+    color: #e2dedee7;
 }
