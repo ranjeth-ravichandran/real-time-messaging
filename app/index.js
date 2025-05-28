@@ -1,4 +1,4 @@
-const socket = new WebSocket('ws://real-time-messaging.onrender.com');
+const socket = new WebSocket('wss://real-time-messaging.onrender.com');
 const log = document.getElementById('log');
 const userDropdown = document.getElementById('userSelect');
 
