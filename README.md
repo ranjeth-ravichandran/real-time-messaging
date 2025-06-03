@@ -7,6 +7,7 @@ Creating a website to understand networking with web sockets and to create a cha
 | Implement into Vercel   | ✅   |
 | Adding database MongoDB | ⬜️   |
 | Adding backend server   | ✅   |
+| Enabling Giphy Support  | ⬜️   |
 
 ## What are Websockets?
 WebSockets provide a full-duplex communication channel over a single connection between the client and the server. 
@@ -71,3 +72,5 @@ This consumes memory and CPU, potentially crashing the server.
 - [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 - [Render: Web Services](https://render.com/)
 - [Vercel](https://vercel.com/)
+- [MongoDb](https://cloud.mongodb.com/)
+- [Giphy](https://developers.giphy.com/dashboard/)
